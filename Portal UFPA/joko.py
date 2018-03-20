@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def save_image(url, image):
-	response = requests.get(url)
+	response = requests.get(url, verify=False)
 
 	if response.status_code == 200:
 		with open(image, 'wb') as f:
@@ -13,7 +13,7 @@ def save_image(url, image):
 
 def function():
 	try:
-		r = requests.get('https://portal.ufpa.br/')
+		r = requests.get('https://portal.ufpa.br/', verify=False)
 		r.raise_for_status()
 		soup = BeautifulSoup(r.content, "lxml")
 
