@@ -176,29 +176,3 @@ def funct():
 
 if __name__ == '__main__':
 	sys.exit(funct())
-'''
-	app = QtWidgets.QApplication(sys.argv)
-	dialog = QtWidgets.QWidget()
-
-	prog = GuiPortal(dialog)
-
-#	dialog.setWindowFlags(QtCore.Qt.FramelessWindowHint)
-	dialog.setAttribute(QtCore.Qt.WA_TranslucentBackground)
-
-	dialog.setFixedSize(dialog.size())
-	images(".ufpa.png", 3)
-	dialog.setWindowIcon(QIcon(".ufpa.png"))
-	os.remove(".ufpa.png")
-
-#	desktop = QtWidgets.QDesktopWidget()
-#	desktoph = desktop.geometry().height()
-#	desktopw = desktop.geometry().width()
-
-#	dw = dialog.width()
-#	dh = dialog.height()   
-
-#	dialog.setGeometry(desktopw-dw, desktoph-dh, dw, dh)
-
-	dialog.show()
-	sys.exit(app.exec_())
-'''
